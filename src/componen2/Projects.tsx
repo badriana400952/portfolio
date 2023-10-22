@@ -9,9 +9,10 @@ import {
     Text
 } from "@chakra-ui/react"
 
-import brimtech from '../assets/brimtech.jpg'
-import golang from '../assets/golang.png'
-import lakoe from '../assets/lakoe.png'
+import lap6 from '../assets/lap6.png'
+import lap3 from '../assets/lap3.png'
+import lap5 from '../assets/lap5.png'
+import lapSircle from '../assets/lapSircle.png'
 const Projects = () => {
     return (
         <>
@@ -22,7 +23,7 @@ const Projects = () => {
                     <Card maxW='xl' shadow={'2xl'} mt={9} _hover={{  transform: 'translate(0,-10px)' }} transition={'0.2s'}>
                         <CardBody>
                             <Image
-                                src={golang}
+                                src={lap3}
                                 alt='Green double couch with wooden legs'
                                 borderRadius='lg'
                                 width={'100%'}
@@ -45,7 +46,7 @@ const Projects = () => {
                     >
                         <CardBody >
                             <Image
-                                src={brimtech}
+                                src={lapSircle}
                                 alt='Green double couch with wooden legs'
                                 borderRadius='lg'
                                 width={'100%'}
@@ -53,11 +54,9 @@ const Projects = () => {
                                 objectFit={'cover'}
                             />
                             <Stack mt='6' spacing='3'>
-                                <Heading size='md'>Living room Sofa</Heading>
+                                <Heading size='md'>Sircle</Heading>
                                 <Text>
-                                    This sofa is perfect for modern tropical spaces, baroque inspired
-                                    spaces, earthy toned spaces and for people who love a chic design with a
-                                    sprinkle of vintage design.
+                                    Sircle adalah clone Twitter yang dibuat menggunakan React, Node.js, Express.js, PostgreSQL, dan Chakra ui. meskipun belom sempurna dalam jangka waktu pengerjaan 1 bulan tetapi sudah bisa digunakan dan saya masih perkembangan terhadap aplikasi ini agar lebih menjadi sempurna selayak nya twitter.
                                 </Text>
                             </Stack>
                         </CardBody>
@@ -66,7 +65,7 @@ const Projects = () => {
                     <Card maxW='xl' shadow={'2xl'} mt={9} _hover={{  transform: 'translate(0,-10px)' }} transition={'0.2s'}>
                         <CardBody>
                             <Image
-                                src={lakoe}
+                                src={lap5}
                                 alt='Green double couch with wooden legs'
                                 borderRadius='lg'
                                 width={'100%'}
@@ -76,7 +75,7 @@ const Projects = () => {
                             <Stack mt='6' spacing='3'>
                                 <Heading size='md'>Laoke</Heading>
                                 <Text>
-                                   Laoke adalah This sofa is perfect for modern tropical spaces, baroque inspired spaces, earthy toned spaces and for people who love a chic design with a sprinkle of vintage design.
+                                   Laoke adalah aplikasi order online yang dibuat untuk mempermudah masyarakat dalam menjual product yang ingin lepas ketergantungan dengan web eccommerce seperti Tokopdeia Lazada dll.
                                 </Text>
                             </Stack>
                         </CardBody>
@@ -85,7 +84,7 @@ const Projects = () => {
                     <Card maxW='xl' shadow={'2xl'} mt={9} _hover={{  transform: 'translate(0,-10px)' }} transition={'0.2s'}>
                         <CardBody>
                             <Image
-                                src={brimtech}
+                                src={lap6}
                                 alt='brimtech'
                                 borderRadius='lg'
                                 width={'100%'}

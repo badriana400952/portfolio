@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
 
-      <Container maxW='container.xl' >
+      <Container maxW='container.xl' mb={20}>
         <Flex justifyContent={'center'} alignItems={'center'} flexWrap={'wrap'} my={'20px'}>
           <Box flex={1} >
             <Heading as={'h1'} size='3xl'>  Hey, I'm Badrian 👋</Heading> <br />
@@ -36,7 +36,7 @@ const Home = () => {
 
       </Container>
       <Divider/>
-      <Center mb={0} mt={20} >
+      <Center mb={0}  >
         <Box width={'100%'} height={'50px'} >
           <Text textAlign={'center'} lineHeight={10}>Badrian - 18 0ktober 2023</Text>
         </Box>
