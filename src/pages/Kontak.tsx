@@ -202,7 +202,7 @@ export const ContactSection: React.FC = () => {
                   mt={6}
                   size="lg"
                   isLoading={isSubmitting}
-                  leftIcon={!isSubmitting && <EmailIcon />}
+                  leftIcon={isSubmitting ? undefined : <EmailIcon />}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
