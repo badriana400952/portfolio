@@ -1,88 +1,106 @@
-import { Box, Center, Container, Divider, Text } from "@chakra-ui/react"
+import { Box, Center, Divider, VStack } from "@chakra-ui/react";
+import TypewriterSequential from "./TypewriterSequential"; // sesuaikan path
 
 const ProfileDeskripsi = () => {
+  const sections = [
+    {
+      title: "HTML",
+      desc: "Saya sangat terampil dalam pengembangan dengan menggunakan HTML. Saya mampu membuat struktur halaman web yang semantik dan mudah dibaca oleh mesin pencari, serta memahami elemen HTML, formulir, multimedia, dan integrasi dengan CSS dan JavaScript.",
+    },
+    {
+      title: "CSS",
+      desc: "Saya memiliki keahlian mendalam dalam menggunakan CSS untuk mengatur tampilan dan tata letak halaman web. Saya membuat desain responsif, menyesuaikan tampilan antarmuka untuk berbagai perangkat, serta menggunakan animasi dan transisi.",
+    },
+    {
+      title: "JavaScript",
+      desc: "Saya menguasai JavaScript untuk mengembangkan fitur interaktif. Saya dapat memanipulasi elemen halaman, memvalidasi formulir, mengakses API, dan mengimplementasikan logika kompleks. Familiar juga dengan jQuery dan Vue.js.",
+    },
+    {
+      title: "TypeScript",
+      desc: "Saya menggunakan TypeScript untuk memastikan kode lebih aman dan scalable, terutama dalam proyek React dan Next.js berskala besar.",
+    },
+    {
+      title: "React JS",
+      desc: "Berpengalaman membangun UI interaktif menggunakan React JS. Mengerti komponen reusable, state & props, routing, dan manajemen state dengan Redux/Context API. Mampu menghubungkan React dengan backend API.",
+    },
+    {
+      title: "Next JS",
+      desc: "Saya menggunakan Next.js untuk membangun aplikasi web yang cepat, SEO-friendly, dan memiliki kemampuan server-side rendering (SSR).",
+    },
+    {
+      title: "Redux Toolkit",
+      desc: "Saya familiar dengan Redux Toolkit untuk manajemen state global yang efisien dan scalable.",
+    },
+    {
+      title: "TanStack",
+      desc: "Saya menggunakan TanStack (React Query) untuk data fetching dan manajemen cache yang optimal pada aplikasi React.",
+    },
+    {
+      title: "Tailwind CSS",
+      desc: "Terampil menggunakan Tailwind CSS untuk membangun UI yang efisien dan responsif menggunakan pendekatan utility-first.",
+    },
+    {
+      title: "Mantine",
+      desc: "Saya menggunakan Mantine UI library untuk membuat antarmuka pengguna yang modern, fleksibel, dan mudah dikustomisasi.",
+    },
+    {
+      title: "Bootstrap",
+      desc: "Saya memahami Bootstrap 5 untuk membangun tata letak web yang responsif dan cepat. Terampil menggunakan komponen siap pakai serta melakukan kustomisasi.",
+    },
+    {
+      title: "Chakra UI",
+      desc: "Familiar dalam membangun antarmuka pengguna yang menarik dan responsif menggunakan Chakra UI.",
+    },
+    {
+      title: "Remix JS",
+      desc: "Pengalaman dalam Remix JS untuk membangun aplikasi web yang cepat dan aman.",
+    },
+    {
+      title: "GitHub",
+      desc: "Aktif menggunakan GitHub untuk mengelola proyek, kolaborasi tim, membuat pull request, dan menangani konflik.",
+    },
+  ];
+
+  const items = [
+    {
+      text: "Saya memiliki latar belakang dalam bidang IT dengan gelar Sarjana Sains Komputer dari Universitas Pamulang. Selama studi, saya fokus pada frontend development dan telah mengikuti seleksi Bootcamp Dumbways Indonesia. Saya menguasai berbagai teknologi sebagai berikut:",
+      props: { textAlign: "justify", mb: 2 },
+    },
+    {
+      text: "Saya juga memiliki pengalaman kerja sebagai Frontend Developer di Ganesha Operation sejak Februari 2024 hingga Juni 2025.",
+      props: { textAlign: "justify", mb: 2 },
+    },
+    ...sections.flatMap((item, i) => [
+      {
+        text: `${i + 1}. ${item.title}`,
+        props: { fontWeight: "bold", mt: 3 },
+      },
+      {
+        text: item.desc,
+        props: { textAlign: "justify", mt: 1 },
+      },
+    ]),
+    {
+      text: "Keterampilan-keterampilan ini memungkinkan saya membangun antarmuka web yang menarik, interaktif, dan adaptif. Saya yakin pengalaman dan kemampuan saya akan menjadi nilai tambah untuk tim pengembangan perangkat lunak di masa depan.",
+      props: { textAlign: "justify", mt: 4 },
+    },
+    {
+      text: "Badriana - 18 Oktober 2023",
+      props: { textAlign: "center", mt: 10, lineHeight: "50px" },
+    },
+  ];
+
   return (
-    <>
-      <Container maxW='container.xl' mb={20}>
-        <Box width={'100%'} marginTop={4}>
-          <Text textAlign={'justify'} mt={3}>
-            Saya memiliki latar belakang dalam bidang IT, dengan gelar Sarjana Sains Komputer dari Universitas
-            Pamulang. Selama studi saya, saya mendalami pemrograman, khususnya frontend developer. Saya
-            juga telah melengkapi diri dengan sertifikasi profesional seperti Mengikuti Seleksi Bootcamp
-            Dumbways Indonesia Kelas Fundamental FullStack. Selama pengalaman belajarsaya sebelumnya, Saya
-            mempunyai keterampilan yang Baik dalam HTML, CSS, JavaScript, React JS, dan Bootstrap 5. Berikut
-            adalah penjelasan lebih lanjut mengenai setiap keterampilan tersebut:
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-
-            1. HTML: Saya sangat terampil dalam pengembangan dengan menggunakan HTML (Hypertext
-            Markup Language). Saya mampu membuat struktur halaman web yang semantik dan mudah
-            dibaca oleh mesin pencari. Saya juga memiliki pemahaman yang baik tentang elemen HTML,
-            formulir, multimedia, dan integrasi dengan CSS dan JavaScript.
-
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-            2. CSS: Saya memiliki keahlian yang mendalam dalam menggunakan CSS (Cascading Style Sheets)
-            untuk mengatur tampilan dan tata letak halaman web. Saya mampu membuat desain yang
-            responsif, menyesuaikan tampilan antarmuka dengan berbagai perangkat dan ukuran layar.
-            Saya juga terampil dalam menggunakan animasi CSS dan efek transisi untuk meningkatkan
-            pengalaman pengguna.
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-            3. JavaScript: Saya memiliki pengetahuan yang kuat dalam bahasa pemrograman JavaScript. Saya
-            mampu mengembangkan skrip yang interaktif dan dinamis untuk memanipulasi elemen
-            halaman, melakukan validasi formulir, mengakses API eksternal, dan mengimplementasikan
-            logika bisnis yang kompleks. Saya juga terbiasa dengan kerangka kerja JavaScript seperti jQuery
-            dan Vue.js.
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-
-            4. React JS: Saya memiliki pengalaman dalam pengembangan dengan menggunakan React JS,
-            salah satu kerangka kerja JavaScript paling populer untuk membangun antarmuka pengguna
-            yang interaktif. Saya dapat membuat komponen UI yang reusable, mengelola state dan props,
-            serta mengimplementasikan routing dan manajemen keadaan dengan Redux atau Context
-
-            API. Saya juga terampil dalam mengintegrasikan React JS dengan API backend untuk membuat
-            aplikasi web yang dinamis.
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-            5. Bootstrap: Saya memiliki pemahaman yang kuat tentang Bootstrap 5, kerangka kerja front-
-            end yang populer. Saya dapat menggunakan komponen Bootstrap yang siap pakai untuk
-
-            membangun tata letak yang responsif dan estetis dengan cepat. Saya juga terampil dalam
-            menyesuaikan gaya dan tema Bootstrap sesuai dengan kebutuhan proyek.
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-            6. Chakra UI: Familiar dengan penggunaan Chakra UI untuk membangun antarmuka pengguna yang menarik dan responsif.
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-            7. Remix JS: Pengalaman dalam pengembangan dengan Remix JS, kerangka kerja modern untuk membangun aplikasi web yang cepat dan aman.
-          </Text>
-          <Text textAlign={'justify'} mt={3}>
-            8. GitHub: Aktif menggunakan GitHub untuk mengelola kode sumber proyek-proyek terbuka. Berpengalaman dalam kolaborasi tim, pembuatan *pull request*, dan penanganan konflik.
-          </Text>
-
-
-
-
-
-          <Text textAlign={'justify'} mt={3}>
-            Keterampilan-keterampilan ini memungkinkan saya untuk mengembangkan tampilan web yang
-            menarik, responsif, dan interaktif. Saya percaya bahwa penguasaan saya terhadap HTML, CSS,
-            JavaScript, React JS, dan Bootstrap 5 akan menjadi aset yang berharga bagi perusahaan dan
-            memungkinkan saya untuk memberikan kontribusi yang signifikan dalam proyek-proyek
-            pengembangan perangkat lunak
-          </Text>
-        </Box>
-      </Container>
-      <Divider />
-      <Center mb={0}  >
-        <Box width={'100%'} height={'50px'} >
-          <Text textAlign={'center'} lineHeight={10}>Badrian - 18 0ktober 2023</Text>
-        </Box>
+    <Box w="100%" mt={6}>
+      <VStack spacing={4} align="stretch">
+        <TypewriterSequential items={items} speed={20} delayBetween={400} />
+      </VStack>
+      <Divider my={10} />
+      <Center>
+        <Box width="100%" height="50px" />
       </Center>
-    </>
-  )
-}
+    </Box>
+  );
+};
 
-export default ProfileDeskripsi
+export default ProfileDeskripsi;

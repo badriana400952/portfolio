@@ -1,22 +1,35 @@
-import { Box, Flex, Image } from '@chakra-ui/react'
-import dedee from '../assets/dedee.jpg'
-import "./component2.css"
-const Profile = () => {
-    return (
-        <>
-            <Flex justifyContent={'center'} mt={20}>
-                <Box>
-              
-                <Box width={'300px'}>
-                    <Image src={dedee} borderRadius={'50%'} width={'100%'} objectFit={'cover'} />
-                </Box>
-                <h2 className='latin' >Badriana</h2>
-                </Box>
-            </Flex>
-            
-            
-        </>
-    )
-}
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import dedee from "../assets/dedee.jpg";
 
-export default Profile
+const Profile = () => {
+  return (
+    <Flex
+      justify="center"
+      align="center"
+      direction="column"
+      mt={[10, 20]}
+      mb={10}
+    >
+      <Box width={["150px", "200px", "250px", "300px"]}>
+        <Image
+          src={dedee}
+          alt="Badriana"
+          borderRadius="full"
+          width="100%"
+          objectFit="cover"
+          boxShadow="lg"
+        />
+      </Box>
+      <Text
+        mt={4}
+        fontSize={["xl", "2xl"]}
+        fontWeight="bold"
+        fontFamily="cursive"
+      >
+        Badriana
+      </Text>
+    </Flex>
+  );
+};
+
+export default Profile;
